@@ -1,7 +1,11 @@
 body{
-  background-color: #0e0e1b  ;
-  color: #beff0a;
-  font-family: monospace;
+  background-color: #222831  ;
+  color: #EEEEEE;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70%;
+  line-height: 1.5;
+
 }
 hr{
   border-style: none;
@@ -15,28 +19,46 @@ img:hover{
 }
 h1{
   /* to be used only in header of a page */
-  color: #0077B6;
-  text-transform: capitalize;
-  word-spacing: 2px;
-  white-space: nowrap;
+  color: #F5F5F5;
+  /* top right bottom left (clockwise) */
+  margin: 0 auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  /* default of 100% font-size is 16px;
+  > 1 em= 16px also font-size gets added from the parent html element
+  > if rem is used then it always use this and wont add the parent font-size*/
+  font-size: 2rem;
+  font-weight: bold;
+
 }
+
 h3{
-  color:#48CAE4;
-}
-h2{
-  color: #48CAE4;
+  color:#00ADB5;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1rem;
+  font-weight: bold;
 }
 h4{
-  color: #48CAE4;
+  color: #00ADB5;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
-p{
-  color: #beff0a;
-}
+/* p{
+  color: #EEEEEE;
+  margin: 0 0 0 0;
+} */
 th{
   color: #de2e2b;
 }
+/* so that the links are properly highlighted they are set to red on hover */
 a:hover{
   color: #de2e2b;
+}
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 50px 20px 50px 20px;
+  text-decoration: none;
 }
 /* *************************CLASS SELECTOR********************** */
 .myphoto{
@@ -44,4 +66,38 @@ a:hover{
 }
 .cert{
   height: 75px;
+}
+
+.cvHeading{
+  width: 20%;
+  text-align: center;
+  position: relative;
+}
+.cvProfilePic{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 40%;
+}
+.computerImgright{
+  height:50px;
+  width: 50px;
+  position: absolute;
+  right: 20%;
+  top: 10%;
+}
+.computerImgleft{
+  height:50px;
+  width: 50px;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+.contactMe{
+  background-color: #A8D8EA;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin: 100px 0 0 0;
+  color: #393E46;
 }
